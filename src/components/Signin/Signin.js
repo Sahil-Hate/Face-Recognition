@@ -3,16 +3,16 @@ import React from 'react';
 const Signin = ({onRouteChange}) => {
     return(
         <main className="pa4 black-80">
-            <form className="measure center ba pa3 shadow-3">
+            <div className="measure center ba pa3 shadow-3">
                 <fieldset id="sign_up" className="ba b--transparent ph0 mh0">
                 <legend className="f2 fw6 ph0 mh0 baskerville ">Sign In</legend>
                 <div className="mt3">
-                    <label className="db fw6 lh-copy f6 baskerville " for="email-address">Email</label>
+                    <label className="db fw6 lh-copy f6 baskerville " htmlFor="email-address">Email</label>
                     <input className="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-80" type="email" name="email-address"  id="email-address" />
                 </div>
                 <div className="mv3">
-                    <label className="db fw6 lh-copy f6 baskerville " for="password">Password</label>
-                    <input className="b pa2 input-reset ba bg-transparent hover-bg-black hover-white w-80" type="password" name="password"  id="password" />
+                    <label className="db fw6 lh-copy f6 baskerville " htmlFor="password">Password</label>
+                    <input className="b pa2 input-reset ba br bg-transparent hover-bg-black hover-white w-80" type="password" name="password"  id="password" />
                 </div>
                 </fieldset>
                 <div className="">
@@ -24,7 +24,7 @@ const Signin = ({onRouteChange}) => {
                 onClick={() => onRouteChange('Register')}
                 >Register</p>
                 </div>
-            </form>
+            </div>
         </main>
     );
 }
